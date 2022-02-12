@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | GamBit Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://gambitui.netlify.app/gambit.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <header class="head">
+        <h1 class="logo"><a href="#">♞GamBit Store</a></h1>
+
+        <form action="get" class="header-search">
+          <input
+            type="text"
+            name="search-box"
+            id="search"
+            placeholder="Search"
+          />
+          <button class="btn btn-primary" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <nav class="header-nav">
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fas fa-user-circle header-icon"></i>Login</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-solid fa-heart header-icon"></i>Whishlist
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-shopping-cart header-icon"></i>Cart</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <form action="get" class="login-form b-rad-l p-01">
+          <h1 class="head-2 fw-b">Login In</h1>
+          <div class="input-wrapper">
+            <label
+              >Email Address
+              <input type="email" placeholder="Email" required />
+            </label>
+          </div>
+          <div class="input-wrapper">
+            <label
+              >Password
+              <input
+                type="password"
+                placeholder="Password"
+                id="input-pass"
+                required
+              />
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="remember-me">
+              <input id="remember-me" name="remember-me" type="checkbox" />
+              Remember me
+            </label>
+
+            <a href="#">Forget Passwrod?</a>
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg">Login</button>
+          <h3 class="head-3">
+            <a href="#" class="text-p-color"
+              >New customer? <strong>Sign In here</strong></a
+            >
+          </h3>
+        </form>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-head">
+          <h4>Made by <span class="logo-img">Vivek Mehto</span></h4>
+        </div>
+        <div class="footer-icons">
+          <a
+            href="https://www.linkedin.com/in/vivek-mehto-8a22841ba/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.instagram.com/vivekmehto/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/vivekmehto" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://twitter.com/vivekmehto_" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <div class="footer-head">
+          <h4>©️ <span class="logo-img">♞</span>GamBit Store | 2022</h4>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
