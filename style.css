@@ -87,10 +87,6 @@ body {
   align-items: center;
 }
 
-.grid-gap {
-  gap: 3rem;
-}
-
 .footer {
   margin-top: auto;
   background-color: var(--primary-color);
