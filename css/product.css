@@ -1,0 +1,33 @@
+.grid-main-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "aside main main main main main"
+    "footer footer footer footer footer footer";
+}
+
+.grid-main-container .head {
+  grid-area: header;
+}
+
+.grid-main-container .main-store {
+  grid-area: main;
+}
+
+.grid-main-container .footer {
+  grid-area: footer;
+}
+
+.filter-list {
+  grid-area: aside;
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.filter-head {
+  justify-content: space-between;
+}
+
+.list .list-title {
+  font-size: 1rem;
+}
