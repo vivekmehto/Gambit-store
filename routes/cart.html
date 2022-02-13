@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | GamBit Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://gambitui.netlify.app/gambit.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <header class="head">
+      <h1 class="logo"><a href="#">♞GamBit Store</a></h1>
+
+      <form action="get" class="header-search">
+        <input type="text" name="search-box" id="search" placeholder="Search" />
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+
+      <nav class="header-nav">
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-user-circle header-icon"></i>Login</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-solid fa-heart header-icon"></i>Whishlist
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-shopping-cart header-icon"></i>Cart</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="flex flex-col gap-3">
+      <h1 class="head-2 text-center m-2">My Cart</h1>
+
+      <div class="cart-container flex gap-2 flex-center">
+        <div class="cart-product">
+          <div class="card card-horizontal">
+            <div class="card-left">
+              <button class="btn-card btn-heart">
+                <i class="fas fa-heart"></i>
+              </button>
+              <div class="card-img">
+                <img
+                  class="img-responsive"
+                  src="/assets/image/blacktshirt.jpg"
+                  alt="image"
+                />
+              </div>
+            </div>
+            <div class="card-right">
+              <div class="card-header">
+                <div class="card-title">
+                  <h2>Chessbase India T-Shirt</h2>
+                  <p>Black T-shirt</p>
+                </div>
+                <div class="card-text">
+                  <p class="fw-b fs-l">
+                    Rs.899
+                    <span class="text-grey fs-m">
+                      <span class="text-lt">Rs.999</span>
+                      <span class="text-p-color"> 10% Off</span>
+                    </span>
+                  </p>
+                  <label for="qty"
+                    >Quantity <button>-</button>
+                    <input
+                      type="number"
+                      name="qty"
+                      class="cart-quantity"
+                      id="qty"
+                      value="1"
+                    />
+                    <button>+</button>
+                  </label>
+                  <p>Size: M</p>
+                </div>
+              </div>
+              <div class="card-footer flex-col gap">
+                <button class="btn btn-grey btn-block">Remove from cart</button>
+                <button class="btn btn-grey btn-block">Move to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-price flex flex-col gap p-01 b-rad-m">
+          <ul class="list">
+            <div class="head-3">Categories</div>
+            <li>
+              <p>Price:</p>
+              <p>₹ 899</p>
+            </li>
+            <li>
+              <p>Discount:</p>
+              <p>-₹ 100</p>
+            </li>
+            <li>
+              <p>Delivery Charges:</p>
+              <p>₹ 49</p>
+            </li>
+            <li class="head-3">
+              <p>Total Amount:</p>
+              <p>₹ 949</p>
+            </li>
+            <p>You will save Rs 100 on this order</p>
+          </ul>
+
+          <button class="btn btn-primary btn-block">Place Order</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
