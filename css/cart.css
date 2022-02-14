@@ -1,0 +1,21 @@
+.cart-quantity {
+  width: 3rem;
+}
+
+.cart-container {
+  margin: auto;
+}
+
+.cart-price {
+  background-color: var(--white);
+  width: 30rem;
+}
+
+.cart-price .list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-grey {
+  color: var(--text-color);
+}
