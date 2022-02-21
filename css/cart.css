@@ -1,14 +1,15 @@
 .cart-quantity {
-  width: 3rem;
+  max-width: 3rem;
 }
 
 .cart-container {
   margin: auto;
+  flex-wrap: wrap;
 }
 
 .cart-price {
   background-color: var(--white);
-  width: 30rem;
+  max-width: 30rem;
 }
 
 .cart-price .list li {

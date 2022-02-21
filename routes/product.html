@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product | GamBit Store</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon/gambit-favicon.ico"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://gambitui.netlify.app/gambit.min.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <div class="grid-main-container">
       <header class="head">
-        <h1 class="logo"><a href="#">♞GamBit Store</a></h1>
+        <h1 class="logo"><a href="/index.html">♞GamBit Store</a></h1>
 
         <form action="get" class="header-search">
           <input
@@ -33,17 +37,17 @@
         <nav class="header-nav">
           <ul>
             <li>
-              <a href="#"
+              <a href="/routes/login.html"
                 ><i class="fas fa-user-circle header-icon"></i>Login</a
               >
             </li>
             <li>
-              <a href="#"
+              <a href="/routes/wishlist.html"
                 ><i class="fas fa-solid fa-heart header-icon"></i>Whishlist
               </a>
             </li>
             <li>
-              <a href="#"
+              <a href="/routes/cart.html"
                 ><i class="fas fa-shopping-cart header-icon"></i>Cart</a
               >
             </li>
@@ -53,11 +57,12 @@
 
       <aside class="filter-list">
         <div class="filter-head flex">
-          <h1 class="head-3">Filters</h1>
+          <button class="head-3" id="filter-btn">Filters</button>
+
           <button class="btn btn-dark btn-sm">Clear</button>
         </div>
 
-        <div class="list">
+        <div class="list filter-list-toggle">
           <div class="list-title">Price</div>
           <div class="radio">
             <label class="radio-label" for="high-low">
@@ -69,8 +74,7 @@
               Low to High
             </label>
           </div>
-        </div>
-        <div class="list">
+
           <div class="list-title">Categories</div>
           <div class="checkbox">
             <label class="checkbox-label" for="books">
@@ -90,9 +94,7 @@
               Notebooks
             </label>
           </div>
-        </div>
 
-        <div class="list">
           <div class="list-title">Ratings</div>
           <input id="rating" name="rating" type="range" min="1" max="5" />
         </div>
@@ -103,7 +105,7 @@
           <h2 class="head-3 product-head">Showing all products:</h2>
         </div>
 
-        <div class="grid grid-col grid-gap">
+        <div class="grid grid-col gap">
           <div class="card card-small">
             <div class="card-img">
               <img
@@ -430,5 +432,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="/js/app.js"></script>
   </body>
 </html>

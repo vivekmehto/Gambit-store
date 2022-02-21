@@ -9,13 +9,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://gambitui.netlify.app/gambit.min.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon/gambit-favicon.ico"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <header class="head">
-      <h1 class="logo"><a href="#">♞GamBit Store</a></h1>
+      <h1 class="logo"><a href="/index.html">♞GamBit Store</a></h1>
 
       <form action="get" class="header-search">
         <input type="text" name="search-box" id="search" placeholder="Search" />
@@ -27,15 +31,19 @@
       <nav class="header-nav">
         <ul>
           <li>
-            <a href="#"><i class="fas fa-user-circle header-icon"></i>Login</a>
+            <a href="/routes/login.html"
+              ><i class="fas fa-user-circle header-icon"></i>Login</a
+            >
           </li>
           <li>
-            <a href="#"
+            <a href="/routes/wishlist.html"
               ><i class="fas fa-solid fa-heart header-icon"></i>Whishlist
             </a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart header-icon"></i>Cart</a>
+            <a href="/routes/cart.html"
+              ><i class="fas fa-shopping-cart header-icon"></i>Cart</a
+            >
           </li>
         </ul>
       </nav>
@@ -43,31 +51,31 @@
 
     <aside class="category-list">
       <div class="category-topic">
-        <a href="#" target="_blank"
+        <a href="/routes/product.html" target="_blank"
           ><i class="fa fa-regular fa-gift"></i>
           <p>Top Offers</p></a
         >
       </div>
       <div class="category-topic">
-        <a href="#" target="_blank"
+        <a href="/routes/product.html" target="_blank"
           ><i class="fa fa-regular fa-book"></i>
           <p>Books</p></a
         >
       </div>
       <div class="category-topic">
-        <a href="#" target="_blank"
+        <a href="/routes/product.html" target="_blank"
           ><i class="fa fa-regular fa-chess"></i>
           <p>Chess Set</p></a
         >
       </div>
       <div class="category-topic">
-        <a href="#" target="_blank">
+        <a href="/routes/product.html" target="_blank">
           <i class="fa fa-regular fa-book-open"></i>
           <p>Note Books</p></a
         >
       </div>
       <div class="category-topic">
-        <a href="#" target="_blank">
+        <a href="/routes/product.html" target="_blank">
           <i class="fa fa-regular fa-pen"></i>
           <p>Pens</p></a
         >
@@ -78,7 +86,9 @@
       <div class="hero-container">
         <div class="hero-head">
           <h1 class="head-1">Exclusive Chess Products</h1>
-          <a class="btn btn-lg" href="#" role="button">Shop Now</a>
+          <a class="btn btn-lg" href="/routes/product.html" role="button"
+            >Shop Now</a
+          >
         </div>
       </div>
 
@@ -88,28 +98,30 @@
 
       <div class="grid grid-col gap-3">
         <div class="card card-small">
-          <div class="card-img">
-            <img
-              class="img-responsive"
-              src="/assets/image/metalchess.jpg"
-              alt="image"
-            />
-          </div>
-          <div class="card-header">
-            <div class="card-title">
-              <h2>Chess Set</h2>
-              <p>Metal Chess Set</p>
+          <a href="/routes/cart.html">
+            <div class="card-img">
+              <img
+                class="img-responsive"
+                src="/assets/image/metalchess.jpg"
+                alt="image"
+              />
             </div>
-            <div class="card-text">
-              <p class="fw-b">
-                Rs.4899
-                <span class="text-grey">
-                  <span class="text-lt">Rs.5999</span>
-                  <span class="text-p-color"> 20% Off</span></span
-                >
-              </p>
+            <div class="card-header">
+              <div class="card-title">
+                <h2>Chess Set</h2>
+                <p>Metal Chess Set</p>
+              </div>
+              <div class="card-text">
+                <p class="fw-b">
+                  Rs.4899
+                  <span class="text-grey">
+                    <span class="text-lt">Rs.5999</span>
+                    <span class="text-p-color"> 20% Off</span></span
+                  >
+                </p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="card card-small">
           <div class="card-img">

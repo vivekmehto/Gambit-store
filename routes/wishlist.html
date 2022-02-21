@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wishlist | GamBit Store</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon/gambit-favicon.ico"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://gambitui.netlify.app/gambit.min.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <header class="head">
-      <h1 class="logo"><a href="#">♞GamBit Store</a></h1>
+      <h1 class="logo"><a href="/index.html">♞GamBit Store</a></h1>
 
       <form action="get" class="header-search">
         <input type="text" name="search-box" id="search" placeholder="Search" />
@@ -27,7 +31,9 @@
       <nav class="header-nav">
         <ul>
           <li>
-            <a href="#"><i class="fas fa-user-circle header-icon"></i>Login</a>
+            <a href="/routes/login.html"
+              ><i class="fas fa-user-circle header-icon"></i>Login</a
+            >
           </li>
           <li>
             <a href="#"
@@ -35,7 +41,9 @@
             </a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart header-icon"></i>Cart</a>
+            <a href="/routes/cart.html"
+              ><i class="fas fa-shopping-cart header-icon"></i>Cart</a
+            >
           </li>
         </ul>
       </nav>
@@ -95,30 +103,6 @@
           </div>
         </div>
 
-        <div class="card card-small">
-          <div class="card-img">
-            <button class="btn-card btn-heart">
-              <i class="fas fa-heart"></i>
-            </button>
-            <img
-              class="img-responsive"
-              src="/assets/image/bluetshirt.jpg"
-              alt="image"
-            />
-          </div>
-          <div class="card-header">
-            <div class="card-title">
-              <h2>Chessbase India</h2>
-              <p>Blue tshirt</p>
-            </div>
-            <div class="card-text">
-              <p class="fw-b">Rs.899</p>
-            </div>
-          </div>
-          <div class="card-footer">
-            <button class="btn btn-grey btn-block m-05">Move to Cart</button>
-          </div>
-        </div>
         <div class="card card-small">
           <div class="card-img">
             <button class="btn-card btn-heart">
