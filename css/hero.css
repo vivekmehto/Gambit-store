@@ -1,0 +1,24 @@
+.hero-container {
+  background-image: url(/assets/image/hero-img.jpg);
+  color: var(--white);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-container .hero-head {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-head .btn-lg {
+  width: max-content;
+  color: var(--black);
+  background-color: var(--white);
+}

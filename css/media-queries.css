@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+  .category-list {
+    font-size: 1rem;
+    gap: 2rem;
+  }
+
+  .hero-container .hero-head {
+    font-size: 2rem;
+  }
+  .header-search {
+    width: 60%;
+  }
+  .login-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .category-list {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+  .header-search {
+    width: 90%;
+  }
+  .footer-icons i {
+    font-size: 1rem;
+  }
+
+  .grid-main-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  .filter-list-toggle {
+    display: none;
+  }
+  .card {
+    width: 20rem;
+  }
+  .card-right {
+    font-size: 0.8rem;
+  }
+
+  .card-text p,
+  .card-text p span,
+  .card-text label {
+    font-size: 0.8rem;
+  }
+}

@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cart | GamBit Store</title>
     <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/favicon/gambit-favicon.ico"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
-    <link rel="stylesheet" href="https://gambitui.netlify.app/gambit.min.css" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
     <header class="head">
-      <h1 class="logo"><a href="#">♞GamBit Store</a></h1>
+      <h1 class="logo"><a href="/index.html">♞GamBit Store</a></h1>
 
       <form action="get" class="header-search">
         <input type="text" name="search-box" id="search" placeholder="Search" />
@@ -27,15 +31,19 @@
       <nav class="header-nav">
         <ul>
           <li>
-            <a href="#"><i class="fas fa-user-circle header-icon"></i>Login</a>
+            <a href="/routes/login.html"
+              ><i class="fas fa-user-circle header-icon"></i>Login</a
+            >
           </li>
           <li>
-            <a href="#"
+            <a href="/routes/wishlist.html"
               ><i class="fas fa-solid fa-heart header-icon"></i>Whishlist
             </a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-shopping-cart header-icon"></i>Cart</a>
+            <a href="/routes/cart.html"
+              ><i class="fas fa-shopping-cart header-icon"></i>Cart</a
+            >
           </li>
         </ul>
       </nav>
@@ -47,7 +55,7 @@
       <div class="cart-container flex gap-2 flex-center">
         <div class="cart-product">
           <div class="card card-horizontal">
-            <div class="card-left">
+            <div class="card-left flex flex-center">
               <button class="btn-card btn-heart">
                 <i class="fas fa-heart"></i>
               </button>
@@ -88,7 +96,7 @@
                 </div>
               </div>
               <div class="card-footer flex-col gap">
-                <button class="btn btn-grey btn-block">Remove from cart</button>
+                <button class="btn btn-grey btn-block">Remove</button>
                 <button class="btn btn-grey btn-block">Move to wishlist</button>
               </div>
             </div>

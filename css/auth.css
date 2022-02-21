@@ -1,7 +1,6 @@
 .login-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .login-form,
@@ -23,10 +22,4 @@
 
 .input-wrapper label {
   font-size: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .login-form {
-    width: 80%;
-  }
 }
